@@ -11,6 +11,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Aboutus from "@/components/Aboutus";
 import Footer from "@/components/Footer";
+import ContactButton from "@/components/ContactButton";
 
 export default function Home() {
   // Creating refs in the parent
@@ -39,6 +40,7 @@ export default function Home() {
           <a href="#" className="bg-blue-500 p-3 rounded-full shadow-lg">
             <img src="/instagram.svg" alt="Instagram" className="w-6 h-6" />
           </a>
+          <ContactButton className='relative z-40'/>
         </div>
 
         {/* Pass refs to sections */}
