@@ -24,6 +24,14 @@ const Artists = forwardRef((props, ref) => {
     cssEase: "linear",
     pauseOnHover: false,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 630, // Mobile screens
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
 
   return (
@@ -31,6 +39,17 @@ const Artists = forwardRef((props, ref) => {
       <h2 className="text-3xl font-bold text-blue-900 mb-12">ARTISTS WE'VE FEATURED</h2>
 
       <div className="relative mt-16 mb-12 flex justify-center items-center">
+        {/* Left-end SVG (larger Movie Reel Circle) */}
+        <div className="relative right-12 z-10 w-48 h-48 md:w-64 md:h-64">
+          <Image
+            src="/moviereelcircle.svg"
+            alt="Filmstrip Circle"
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+          />
+        </div>
+
         {/* Filmstrip SVG */}
         <Image
           src="/moviereel.svg"
@@ -41,15 +60,15 @@ const Artists = forwardRef((props, ref) => {
         />
 
         {/* Infinite Slider inside Reel */}
-        <Slider {...settings} className="relative z-10 w-[80%] max-w-3xl">
+        <Slider {...settings} className="relative z-10 right-16 w-[80%] max-w-3xl">
           {artists.map((artist) => (
             <div key={artist.id} className="px-2">
               <Image
                 src={artist.img}
                 alt="Artist"
                 width={150}
-                height={220} // Increased height
-                className="rounded-lg object-cover w-[130px] h-[160px] mx-auto border-4 border-gray-600"
+                height={220}
+                className="rounded-lg object-cover w-[130px] h-[160px] mx-auto border-4 border-gray-600 md:w-[130px] md:h-[160px] sm:w-[100px] sm:h-[140px]"
               />
             </div>
           ))}
@@ -60,3 +79,4 @@ const Artists = forwardRef((props, ref) => {
 });
 
 export default Artists;
+  
