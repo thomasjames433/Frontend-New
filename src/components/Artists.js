@@ -60,7 +60,7 @@ const Artists = forwardRef((props, ref) => {
         />
 
         {/* Infinite Slider inside Reel */}
-        <Slider {...settings} className="relative z-10 right-16 w-[80%] max-w-3xl">
+        <Slider {...settings} className="relative right-16 w-[80%] max-w-3xl">
           {artists.map((artist) => (
             <div key={artist.id} className="px-2">
               <Image
