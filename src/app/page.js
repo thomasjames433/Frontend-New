@@ -38,7 +38,7 @@ export default function Home() {
       <Services />
 
       {/* Floating Buttons for Social Media and Contact */}
-      <div className="fixed top-1/3 right-6 flex flex-col space-y-4 z-[9999]">
+      <div className="fixed top-24 right-6 md:top-1/3 md:right-6 flex flex-col space-y-4 z-[9999]">
         <a href="#" className="bg-blue-600 p-3 rounded-full shadow-lg">
           <Image src="/whatsapp.svg" alt="whatsapp" width={24} height={24} />
         </a>
@@ -47,12 +47,15 @@ export default function Home() {
         </a>
       </div>
         <button onClick={() => setPopupOpen(true)}>
-          <ContactButton className="relative z-40" />
+          <ContactButton className="fixed z-[9999]" />
         </button>
 
       {/* Sections with refs */}
-      <Events ref={eventsRef} />
-      <Aboutus />
+      <div className="xl:flex xl:flex-row">
+        <Events ref={eventsRef} />
+        <Aboutus />
+        <img src="/aboutus.svg" alt="About Us" className="hidden xl:block xl:mr-0 ml-auto h-[800px] w-[520px]" />
+      </div>
       <Artists ref={artistsRef} />
       <Reviews ref={reviewsRef} />
       <Team ref={teamRef} />

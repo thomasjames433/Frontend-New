@@ -13,7 +13,7 @@ export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef }) {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full bg-opacity-50 text-white px-8 py-4 flex justify-between items-center z-50">
+    <nav className="absolute top-0 left-0 w-full bg-opacity-50 text-white px-8 py-4 flex justify-between items-center z-[10000]">
       {/* Logo */}
       <div className="flex items-center relative top-2 right-2 md:right-0 md:left-2 space-x-2">
         <Image src="/magicmakers.svg" alt="Magic Makers Logo" width={150} height={50} priority />

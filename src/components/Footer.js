@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 text-center md:text-left">
             
             {/* Left Side - Description */}
-            <div>
+            <div className='m-3'>
               <h3 className="text-xl font-semibold mb-4">Let’s Make It Happen!</h3>
               <p className="text-gray-300">
                 With exceptional experiences that blend creativity, precision, and heartfelt passion, just sit back, relax, 
@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
     
             {/* Right Side - Contact Details */}
-            <div>
+            <div className='md:ml-32'>
               <h3 className="text-xl font-semibold mb-4">Contact Us at</h3>
               <div className="flex flex-col space-y-2">
                 <p className="flex items-center justify-center md:justify-start">
