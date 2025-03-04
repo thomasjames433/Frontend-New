@@ -7,12 +7,8 @@ const ContactButton = () => {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg"
-      >
-        Send Us a Message
-      </button>
+      <img src="/ducksend.svg" alt="Send a Message"  onClick={() => setIsOpen(true)}
+        className="fixed bottom-6 right-6 text-white w-72 h-20 rounded-full" />
       {isOpen && <PopupForm className='relative z-[999]' isOpen={isOpen} onClose={() => setIsOpen(false)} />}
     </>
   );

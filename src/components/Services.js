@@ -29,7 +29,7 @@ const Services = () => {
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {services.map((service, index) => (
-                <div key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden">
+                <div key={index} className="bg-white shadow-lg rounded-t-[25px] overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-blue-900">{service.title}</h3>

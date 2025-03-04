@@ -2,8 +2,17 @@
 import Image from "next/image";
 
 const PopupForm = ({ isOpen, onClose }) => {
+  const handleBackgroundClick = (e) => {
+    // Prevent closing if clicking inside the form
+    if (e.target.id === "popup-container") {
+      onClose();
+    }
+  };
+
   return (
     <div
+      id="popup-container"
+      onClick={handleBackgroundClick}
       className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity ${
         isOpen ? "opacity-100 visible" : "opacity-0 invisible"
       } z-[999]`}
