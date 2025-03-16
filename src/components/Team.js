@@ -43,7 +43,7 @@ const Team = forwardRef((props, ref) => {
               className="w-32 h-32 rounded-full object-cover border-2 border-gray-300 transition-all duration-300 hover:border-4 hover:border-blue-500"
             />
             <div className="mt-3">
-              <h3 className="text-white bg-blue-900 px-4 py-1 rounded-lg font-semibold">{member.name}</h3>
+              <h3 className="text-blue-900 bg-white px-4 py-1 rounded-lg font-semibold">{member.name}</h3>
               <p className="text-gray-500">{member.position}</p>
             </div>
           </div>
