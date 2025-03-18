@@ -40,7 +40,7 @@ const Artists = forwardRef((props, ref) => {
 
       <div className="relative mt-16 mb-12 flex justify-center items-center">
         {/* Left-end SVG (larger Movie Reel Circle) */}
-        <div className="relative right-12 z-10 hidden md:block md:w-64 md:h-72">
+        <div className="relative left-16 z-10 hidden lg:block md:w-64 md:h-72">
           <Image
             src="/moviereelcircle.svg"
             alt="Filmstrip Circle"
@@ -50,6 +50,7 @@ const Artists = forwardRef((props, ref) => {
           />
         </div>
 
+        
         {/* Filmstrip SVG */}
         <Image
           src="/moviereel.svg"
@@ -58,6 +59,8 @@ const Artists = forwardRef((props, ref) => {
           height={200}
           className="absolute z-0 w-screen max-w-4xl h-[500px]"
         />
+        
+        
 
         {/* Infinite Slider inside Reel */}
         <Slider {...settings} className="relative md:right-16 w-[80%] max-w-3xl">
@@ -73,6 +76,16 @@ const Artists = forwardRef((props, ref) => {
             </div>
           ))}
         </Slider>
+
+        <div className="relative right-12 z-10 hidden lg:block md:w-64 md:h-72">
+          <Image
+            src="/moviereelcircle.svg"
+            alt="Filmstrip Circle"
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+          />
+        </div>
       </div>
     </section>
   );
