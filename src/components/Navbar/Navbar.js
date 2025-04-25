@@ -29,9 +29,10 @@ export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef }) {
 
       {/* Navigation Links */}
       <ul className={`md:flex space-x-8 text-lg mx-3 
-        ${isOpen ? "absolute top-16 left-0 w-full bg-black bg-opacity-80 p-10 flex flex-col items-start space-y-4 pl-6 h-[250px]" : "hidden md:flex"}`}>
+        ${isOpen ? "absolute top-16 left-0 w-full bg-black bg-opacity-80 p-10 flex flex-col items-start space-y-4 pl-6 h-[300px]" : "hidden md:flex"}`}>
         <li className="cursor-pointer text-xl hover:text-gray-300 relative left-7 md:left-0 px-6" onClick={() => scrollToSection(eventsRef)}>Events</li>
         <li className="cursor-pointer text-xl hover:text-gray-300 px-6" onClick={() => scrollToSection(artistsRef)}>Artists</li>
+        <li className="cursor-pointer text-xl hover:text-gray-300 px-6" onClick={() => scrollToSection(artistsRef)}>Campus Ambassador</li>
         <li className="cursor-pointer text-xl hover:text-gray-300 px-6" onClick={() => scrollToSection(reviewsRef)}>Reviews</li>
         <li className="cursor-pointer text-xl hover:text-gray-300 px-6" onClick={() => scrollToSection(teamRef)}>Meet the Team</li>
       </ul>
