@@ -42,7 +42,7 @@ const Artists = forwardRef((props, ref) => {
 
       <div className="relative mt-16 mb-12 flex justify-center items-center">
         {/* Left-end SVG (larger Movie Reel Circle) */}
-        <div className="relative right-96 z-20 hidden lg:block md:w-64 md:h-72">
+        <div className="relative right-[35rem] z-20 hidden lg:block md:w-64 md:h-72">
           <Image
             src="/moviereelcircle.svg"
             alt="Filmstrip Circle"
