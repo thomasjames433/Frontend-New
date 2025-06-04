@@ -36,13 +36,11 @@ const Artists = forwardRef((props, ref) => {
 
   return (
     <section ref={ref} className="py-12 px-6 text-center relative pb-16">
-      <h2 className="text-3xl font-bold text-blue-900 mb-28 lg:mb-12">
-        ARTISTS WE'VE FEATURED
-      </h2>
+      <h2 className="text-3xl font-bold text-blue-900 mb-12">ARTISTS WE'VE FEATURED</h2>
 
       <div className="relative mt-16 mb-12 flex justify-center items-center">
         {/* Left-end SVG (larger Movie Reel Circle) */}
-        <div className="relative right-96 z-20 hidden lg:block md:w-64 md:h-72">
+        <div className="relative left-16 z-10 hidden lg:block md:w-64 md:h-72">
           <Image
             src="/moviereelcircle.svg"
             alt="Filmstrip Circle"
@@ -52,46 +50,41 @@ const Artists = forwardRef((props, ref) => {
           />
         </div>
 
-        {/* Filmstrip as repeating background */}
-        <div
-          className="
-            absolute z-0 overflow-hidden
-            -left-6 -right-6 lg:left-[20rem]
-            h-[200px] sm:h-[250px]
-            bg-left-top bg-repeat-x
-            bg-[length:auto_200px] sm:bg-[length:auto_250px]
-          "
-          style={{ backgroundImage: "url('/moviereel.svg')" }}
+        
+        {/* Filmstrip SVG */}
+        <Image
+          src="/moviereel.svg"
+          alt="Filmstrip"
+          width={1000}
+          height={200}
+          className="absolute z-0 w-screen max-w-4xl h-[500px]"
         />
+        
+        
 
         {/* Infinite Slider inside Reel */}
-        <div
-          className="
-            absolute z-10 inset-y-0
-            -left-6 -right-6 lg:left-[20rem]
-            flex items-center
-          "
-        >
-          <div className="w-full">
-            <Slider {...settings}>
-              {artists.map((artist) => (
-                <div key={artist.id} className="px-2">
-                  <Image
-                    src={artist.img}
-                    alt="Artist"
-                    width={240}
-                    height={300}
-                    className="
-                      rounded-lg object-cover
-                      w-[120px] h-[160px]
-                      sm:w-[160px] sm:h-[180px]
-                      mx-auto border-4 border-gray-600
-                    "
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
+        <Slider {...settings} className="relative md:right-16 w-[80%] max-w-3xl">
+          {artists.map((artist) => (
+            <div key={artist.id} className="px-2">
+              <Image
+                src={artist.img}
+                alt="Artist"
+                width={150}
+                height={220}
+                className="rounded-lg object-cover w-[130px] h-[160px] mx-auto border-4 border-gray-600 md:w-[130px] md:h-[160px] sm:w-[100px] sm:h-[140px]"
+              />
+            </div>
+          ))}
+        </Slider>
+
+        <div className="relative right-12 z-10 hidden lg:block md:w-64 md:h-72">
+          <Image
+            src="/moviereelcircle.svg"
+            alt="Filmstrip Circle"
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+          />
         </div>
       </div>
     </section>
