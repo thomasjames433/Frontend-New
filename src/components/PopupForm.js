@@ -11,11 +11,11 @@ const PopupForm = ({ isOpen, onClose }) => {
     <div
       id="popup-container"
       onClick={handleBackgroundClick}
-      className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 ${
+      className={`fixed inset-0 flex items-center justify-center bg-blue-950/60 backdrop-blur-md transition-opacity duration-300 ${
         isOpen ? "opacity-100 visible" : "opacity-0 invisible"
       } z-[10000]`}
     >
-      <div className="bg-white w-[90%] max-w-md p-6 rounded-lg shadow-2xl relative text-center">
+      <div className="bg-white/90 backdrop-blur-lg w-[90%] max-w-md p-6 rounded-lg shadow-2xl relative text-center">
         {/* Close Button */}
         <button
           onClick={onClose}

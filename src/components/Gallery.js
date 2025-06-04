@@ -44,9 +44,9 @@ const Gallery = forwardRef((props, ref) => {
             const relativePos = distance > total / 2 ? distance - total : distance;
 
             let scaleClass = "scale-90 opacity-70 z-0";
-            if (relativePos === 0) scaleClass = "scale-110 z-30";
-            else if (Math.abs(relativePos) === 1) scaleClass = "scale-94 opacity-60 z-20";
-            else if (Math.abs(relativePos) === 2) scaleClass = "scale-90 opacity-40 z-10";
+            if (relativePos === 0) scaleClass = "scale-[1.05] z-30";
+            else if (Math.abs(relativePos) === 1) scaleClass = "scale-[0.92] opacity-60 z-20";
+            else if (Math.abs(relativePos) === 2) scaleClass = "scale-[0.85] opacity-40 z-10";
 
             return (
               <SwiperSlide key={index} className="!flex justify-center h-80">
