@@ -13,6 +13,12 @@ import Aboutus from "@/components/Aboutus";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
 import PopupForm from "@/components/PopupForm"; // Import popup
+import Gallery from "@/components/Gallery";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/autoplay';
+
 
 export default function Home() {
   // Creating refs in the parent
@@ -20,6 +26,8 @@ export default function Home() {
   const artistsRef = useRef(null);
   const reviewsRef = useRef(null);
   const teamRef = useRef(null);
+  const galleryRef = useRef(null);
+
 
   // State to handle popup visibility
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -32,6 +40,7 @@ export default function Home() {
         artistsRef={artistsRef}
         reviewsRef={reviewsRef}
         teamRef={teamRef}
+        galleryRef={galleryRef}
       />
 
       <Hero />
@@ -58,6 +67,7 @@ export default function Home() {
       </div>
       <Artists ref={artistsRef} />
       <Reviews ref={reviewsRef} />
+      <Gallery ref={galleryRef}/>
       <Team ref={teamRef} />
       <Footer />
 

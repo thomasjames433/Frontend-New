@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef }) {
+export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef, galleryRef }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -55,10 +55,22 @@ export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef }) {
         </li>
         <li
           className="cursor-pointer text-xl hover:text-gray-300 px-6"
+
+          onClick={() => scrollToSection(galleryRef)}
+        >
+          Gallery
+        </li>
+
+        <li
+          className="cursor-pointer text-xl hover:text-gray-300 px-6"
+
           onClick={() => scrollToSection(teamRef)}
         >
           Meet the Team
         </li>
+
+        
+
         <li
           className="cursor-pointer text-xl hover:text-gray-300 px-6 md:hidden"
           onClick={() => scrollToSection(artistsRef)}
