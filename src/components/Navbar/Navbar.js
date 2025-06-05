@@ -55,6 +55,7 @@ export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef, gal
         </li>
         <li
           className="cursor-pointer text-xl hover:text-gray-300 px-6"
+
           onClick={() => scrollToSection(galleryRef)}
         >
           Gallery
@@ -62,11 +63,14 @@ export default function Navbar({ eventsRef, artistsRef, reviewsRef, teamRef, gal
 
         <li
           className="cursor-pointer text-xl hover:text-gray-300 px-6"
+
           onClick={() => scrollToSection(teamRef)}
         >
           Meet the Team
         </li>
+
         
+
         <li
           className="cursor-pointer text-xl hover:text-gray-300 px-6 md:hidden"
           onClick={() => scrollToSection(artistsRef)}

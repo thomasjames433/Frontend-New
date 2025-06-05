@@ -47,7 +47,7 @@ export default function Home() {
       <Services />
 
       {/* Floating Buttons for Social Media and Contact */}
-      <div className="fixed top-24 right-6 md:top-1/3 md:right-6 flex flex-col space-y-4 z-[9999]">
+      <div className="fixed top-24 right-6 md:top-1/3 md:right-6 flex flex-col space-y-4 z-[999]">
         <a href="#" className="bg-blue-600 p-3 rounded-full shadow-lg">
           <Image src="/whatsapp.svg" alt="whatsapp" width={24} height={24} />
         </a>
