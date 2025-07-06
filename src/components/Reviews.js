@@ -7,17 +7,17 @@ import "slick-carousel/slick/slick-theme.css";
 const reviews = [
   {
     id: 1,
-    name: "Angela Yu",
-    position: "Something of Something",
+    name: "Thomas James",
+    position: "NITC",
     image: "/angelayu.png",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "MME turned our college fest into a spectacular event, managing every detail with professionalism and creativity. Highly recommended!",
   },
   {
-    id: 2,
-    name: "John Doe",
-    position: "CEO of XYZ",
-    image: "/images/john.jpg",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    id: 1,
+    name: "Thomas James",
+    position: "NITC",
+    image: "/angelayu.png",
+    text: "MME turned our college fest into a spectacular event, managing every detail with professionalism and creativity. Highly recommended!",
   },
 ];
 

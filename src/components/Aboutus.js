@@ -8,9 +8,7 @@ const Aboutus = () => {
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">ABOUT US</h2>
             <p className="mt-4 text-lg leading-relaxed">
-              Magic Makers Entertainment was born from hard work, resilience, and passion. 
-              What began as a spark of curiosity grew into an idea, an opportunity, and finally a vision. 
-              Driven by joy and dedication, our unwavering team turned aspirations into reality.
+              At Magic Makers Entertainments (MME Live Pvt Ltd), we believe every event is a story waiting to be told. From the initial spark of an idea to the final spotlight on stage, we handle each detail with creativity, precision, and a deep understanding of your audience. Having conducted events across Kerala, we have built a reputation for delivering experiences that people remember, blending quality, innovation, and a touch of magic every time.
             </p>
           </div>
         </section>
