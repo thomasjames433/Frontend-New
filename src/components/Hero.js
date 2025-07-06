@@ -13,8 +13,8 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-white">
         <h1 className="text-4xl md:text-6xl font-bold">Your Go-To Event Management Experts!</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="mt-4 text-lg max-w-3xl mx-auto">
+          Whether it’s a vibrant college fest, a soulful musical night, or a brand activation, our team ensures your event is smooth, engaging, and impactful.
         </p>
       </div>
     </div>
