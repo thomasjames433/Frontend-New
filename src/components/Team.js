@@ -3,29 +3,44 @@ import { forwardRef } from "react";
 
 const teamMembers = [
   {
-    name: "Shawn Mendes",
-    position: "Something of Something",
-    image: "/artist1.png",
+    name: "Abhijith Cheruvatt",
+    position: "CEO",
+    image: "/Abhijith.png",
   },
   {
-    name: "Sabrina Carpenter",
-    position: "Something of Something",
-    image: "/artist2.png",
+    name: "Jose Tom",
+    position: "COO",
+    image: "/Jose.png",
   },
   {
-    name: "Justin Bieber",
-    position: "Something of Something",
-    image: "/artist3.png",
+    name: "Abhishek Kurian",
+    position: "CMO",
+    image: "/Abhishek.png",
   },
   {
-    name: "Rose",
-    position: "Something of Something",
-    image: "/artist4.png",
+    name: "Mathew Davis",
+    position: "SFO",
+    image: "/Mathew.png",
   },
   {
-    name: "Harry Styles",
-    position: "Something of Something",
-    image: "/artist5.png",
+    name: "Amal K",
+    position: "CTO",
+    image: "/Amal.png",
+  },
+  {
+    name: "Akash Suresh",
+    position: "CDO",
+    image: "/Akash.png",
+  },
+  {
+    name: "Jonathan Cijo Jose",
+    position: "CPO",
+    image: "/Jonathan.jpeg",
+  },
+  {
+    name: "Tresa Maria Biju",
+    position: "CIO",
+    image: "/Tresa.png",
   },
 ];
 
