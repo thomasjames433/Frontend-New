@@ -3,30 +3,31 @@ import { forwardRef } from "react";
 
 const Events = forwardRef((props, ref) => {
   const events = [
+
+    {
+      title: "Inceptra",
+      date: "Sept 26th | Govt Medical College Ernakulam",
+      image: "/concert3.png",
+      link: "#",
+    },
     {
       title: "Excel'24",
       date: "13 Feb | Govt model engineering college Thrikkakara",
-      image: "/concert1.png",
+      image: "/Excel.jpg",
       link: "#",
     },
     {
       title: "IHRD Tharang 2k25",
       date: "22-23 Feb | Irinjalakuda",
-      image: "/concert2.png",
+      image: "/Tharang.JPG",
       link: "#",
     },
-    {
-      title: "Concert 3",
-      date: "13 Feb | XYZ Venue",
-      image: "/concert3.png",
-      link: "https://in.linkedin.com/in/thomasjames433",
-    },
-    {
-      title: "Concert 4",
-      date: "13 Feb | XYZ Venue",
-      image: "/concert1.png",
-      link: "#",
-    },
+    // {
+    //   title: "Concert 4",
+    //   date: "13 Feb | XYZ Venue",
+    //   image: "/concert1.png",
+    //   link: "#",
+    // },
   ];
 
   return (
