@@ -35,13 +35,12 @@ const PopupForm = ({ isOpen, onClose }) => {
     setSubmitStatus(null);
 
     try {
-      // ⭐ THIS IS THE KEY CHANGE ⭐
-      // We send the data to Formspree using fetch
-      const response = await fetch("https://formspree.io/f/xrborkjv", { // <-- PASTE YOUR FORMSPREE URL HERE
+      // ⭐ THIS IS THE ONLY PART THAT CHANGES ⭐
+      const response = await fetch("/api/sendEmail", { // <-- CHANGED URL
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/json", // Important: Tells Formspree to send a JSON response
+          // "Accept" header removed, as it was for Formspree
         },
         body: JSON.stringify(formData),
       });
@@ -53,7 +52,7 @@ const PopupForm = ({ isOpen, onClose }) => {
         setTimeout(() => {
           onClose();
           setSubmitStatus(null); // Reset status for next time
-        }, 3000); 
+        }, 3000);
       } else {
         throw new Error("Failed to send message");
       }
