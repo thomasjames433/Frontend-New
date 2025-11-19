@@ -18,6 +18,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/autoplay';
+import ModernGallery from "@/components/Galleryv2";
 
 
 export default function Home() {
@@ -67,7 +68,7 @@ export default function Home() {
       </div>
       <Artists ref={artistsRef} />
       <Reviews ref={reviewsRef} />
-      <Gallery ref={galleryRef}/>
+      <ModernGallery ref={galleryRef}/>
       <Team ref={teamRef} />
       <Footer />
 
