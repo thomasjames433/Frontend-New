@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
 const GalleryImages = [
@@ -28,7 +28,7 @@ const GalleryImages = [
   },
 ];
 
-export default function ModernGallery() {
+const ModernGallery = forwardRef((props,ref)=> {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
@@ -46,7 +46,7 @@ export default function ModernGallery() {
   };
 
   return (
-    <div className="min-h-screen bg-white py-16 px-4 mt-3">
+    <div ref={ref} className="min-h-screen bg-white py-16 px-4 mt-3">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-12 text-center">
         <h2 className="text-4xl font-bold  text-blue-900 mb-4">
@@ -211,3 +211,6 @@ export default function ModernGallery() {
     </div>
   );
 }
+)
+
+export default ModernGallery;
