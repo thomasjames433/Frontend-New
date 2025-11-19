@@ -13,7 +13,7 @@ import Aboutus from "@/components/Aboutus";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
 import PopupForm from "@/components/PopupForm"; // Import popup
-import Gallery from "@/components/Gallery";
+import Gallery from "@/components/Galleryv2";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
