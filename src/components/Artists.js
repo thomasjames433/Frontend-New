@@ -6,11 +6,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const artists = [
-  { id: 1, img: "/artist1.png" },
-  { id: 2, img: "/artist2.png" },
-  { id: 3, img: "/artist3.png" },
-  { id: 4, img: "/artist4.png" },
-  { id: 5, img: "/artist5.png" },
+  { id: 1, img: "/artist1j.jpg" },
+  { id: 2, img: "/artist2j.jpg" },
+  { id: 3, img: "/artist3j.jpg" },
+  { id: 4, img: "/artist4j.jpg" },
+  { id: 5, img: "/artist5j.jpg" },
+  { id: 6, img: "/artist6j.jpg" },
 ];
 
 const Artists = forwardRef((props, ref) => {
