@@ -26,6 +26,30 @@ const GalleryImages = [
     alt: "Students participating in a workshop event.",
     title: "Workshop"
   },
+  {
+    id: 5,
+    src: "/IMG_1009.jpeg",
+    alt: "A1",
+    title: "A1"
+  },
+  {
+    id: 6,
+    src: "/IMG_1010.jpeg",
+    alt: "A1",
+    title: "A1"
+  },
+  {
+    id: 7,
+    src: "/IMG_1011.png",
+    alt: "A1",
+    title: "A1"
+  },
+  {
+    id: 8,
+    src: "/IMG_1012.jpeg",
+    alt: "A!",
+    title: "A!"
+  },
 ];
 
 const ModernGallery = forwardRef((props,ref)=> {

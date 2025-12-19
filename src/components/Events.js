@@ -4,12 +4,7 @@ import { forwardRef } from "react";
 const Events = forwardRef((props, ref) => {
   const events = [
 
-    {
-      title: "Inceptra",
-      date: "Sept 26th | Govt Medical College Ernakulam",
-      image: "/concert3.png",
-      link: "#",
-    },
+    
     {
       title: "Excel'24",
       date: "13 Feb | Govt model engineering college Thrikkakara",
